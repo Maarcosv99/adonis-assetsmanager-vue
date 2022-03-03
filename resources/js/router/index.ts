@@ -1,5 +1,5 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
-import { Home, Github } from '../components'
+import { Home, Github } from '@/components'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,6 +13,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Github,
   },
 ]
+
 const router = createRouter({
   history: createWebHistory(),
   routes,

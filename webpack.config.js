@@ -225,6 +225,10 @@ config.infrastructureLogging = {
 }
 config.stats = 'errors-warnings'
 
+config.resolve.alias = {
+  '@': join(__dirname, './resources/js'),
+}
+
 /*
 |--------------------------------------------------------------------------
 | Export config
