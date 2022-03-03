@@ -20,6 +20,12 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+Route.get('/', async () => {
+  return { hello: 'world' }
+})
+
+// If no previous route is
+// found, display this route.
 Route.get('*', async ({ view }) => {
   return view.render('index')
 })
