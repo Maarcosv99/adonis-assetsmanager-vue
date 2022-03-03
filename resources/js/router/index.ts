@@ -1,9 +1,9 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
-import { Home, Github } from '@/components'
+import { Home, Github, NotFound } from '@/components'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home,
   },
@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/github',
     name: 'Github',
     component: Github,
+  },
+  {
+    path: '/:patchMatch(.*)*',
+    name: 'NotFound',
+    component: NotFound,
   },
 ]
 
